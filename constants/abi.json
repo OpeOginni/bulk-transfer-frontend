@@ -1,0 +1,60 @@
+[
+    { "type": "constructor", "payable": false, "inputs": [] },
+    { "type": "error", "name": "BulkTransfer__NoWinnerAddressGiven", "inputs": [] },
+    { "type": "error", "name": "BulkTransfer__NotOwner", "inputs": [] },
+    { "type": "error", "name": "BulkTransfer__TransferAmountMoreThanDeposit", "inputs": [] },
+    {
+        "type": "function",
+        "name": "addWinnersAddress",
+        "constant": false,
+        "payable": false,
+        "inputs": [{ "type": "address[15]", "name": "_winnerAddresses" }],
+        "outputs": []
+    },
+    {
+        "type": "function",
+        "name": "bulkPayment",
+        "constant": false,
+        "stateMutability": "payable",
+        "payable": true,
+        "inputs": [{ "type": "uint256", "name": "rewardValue" }],
+        "outputs": []
+    },
+    { "type": "function", "name": "fundContract", "constant": false, "stateMutability": "payable", "payable": true, "inputs": [], "outputs": [] },
+    {
+        "type": "function",
+        "name": "getAmountDeposited",
+        "constant": true,
+        "stateMutability": "view",
+        "payable": false,
+        "inputs": [],
+        "outputs": [{ "type": "uint256" }]
+    },
+    {
+        "type": "function",
+        "name": "getContractBalance",
+        "constant": true,
+        "stateMutability": "view",
+        "payable": false,
+        "inputs": [],
+        "outputs": [{ "type": "uint256" }]
+    },
+    {
+        "type": "function",
+        "name": "getWinnersLength",
+        "constant": true,
+        "stateMutability": "view",
+        "payable": false,
+        "inputs": [],
+        "outputs": [{ "type": "uint256" }]
+    },
+    {
+        "type": "function",
+        "name": "getWinnersList",
+        "constant": true,
+        "stateMutability": "view",
+        "payable": false,
+        "inputs": [],
+        "outputs": [{ "type": "address[15]" }]
+    }
+]
